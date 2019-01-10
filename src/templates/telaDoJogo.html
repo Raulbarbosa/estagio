@@ -1,0 +1,56 @@
+<div class="container">
+	<div class="container">
+		<h3>Jogador: <p id="recebeNome" style="display:inline"> </p></h3>
+		<button type="button" class="btn btn-light" onclick="telaInicial()">Tela Inicial</button>
+	</div>
+	<div class="mesaJogo container-fluid row">
+		<div class="box">
+			<div class="mao" id="maoJogador">
+				<!-- cartas serão inseridas aqui -->
+				<div class="clear"></div>
+			</div>
+			<div class="form-group" id="divPontosJogador">
+      			<label style="display: inline;">Pontos:</label>
+      			<input type="text" readonly style="display: inline" id="pontosJogador"></input>
+      			<button type="button" class="btn btn-success" id="pegarCarta" onclick="pegarCarta()">Pegar carta!</button>
+    		</div>
+		</div>
+		<div class="box2">
+			<div id="macoBaralho">
+			<img id="deck" src="imagens/capaBaralho.jpg">
+			<div class="form-group" id="divQtdCartas">
+      			<label style="display: inline;">Cartas no baralho:</label>
+      			<input type="text" id="qtdCartas" readonly></input>
+    		</div>
+			</div><br><br>
+			<button type="button" class="btn btn-success" id="pararJogo" onclick="finalChefao()">Parar!</button>
+			 <!-- <button type="button" class="btn btn-success" onclick="jogarNovamente()">Jogar Novamente!</button> -->
+
+		</div>
+		<div class="box3">
+			<div class="mao" id="maoCPU">
+				<!-- cartas serão inseridas aqui -->
+				<div class="clear"></div>
+			</div>
+			<div class="form-group" id="divPontosCPU">
+      			<label style="display: inline;">Pontos:</label>
+      			<input type="text" id="pontosCPU" readonly></input>
+    		</div>
+		</div>
+		<div class="clear">
+		</div>
+	</div>
+</div>
+
+			<div class="modal fade" id="modalResultado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+			<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body" id="divResultado">
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="jogarNovamente()">Jogar Novamente</button>
+				<button type="button" class="btn btn-primary" onclick="telaInicial()">Tela Inicial</button>
+				</div>
+			</div>
+			</div>
+			</div>
