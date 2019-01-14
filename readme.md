@@ -3,11 +3,11 @@ jogo 21 adaptado para ser jogado de modo pratico.
 
 
 ### Requisito do projeto ### 
-Node.js, 
+Node.js
 gulp
 
 
-### ConstruÃ§Ã£o e implementaÃ§Ã£o ###
+### Construção e implementação ###
 *Na pasta principal do projeto execute o comando:  "npm install" depois execute o comando "npm install gulp --save -dev"
 
 

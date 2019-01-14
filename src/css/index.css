@@ -92,3 +92,7 @@ h3 {
 #qtdCartas {
 	width: 25px
 }
+
+#obrigatorio {
+	color: red;
+}

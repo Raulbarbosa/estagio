@@ -78,7 +78,7 @@ function telaInicial() {
 $( document ).ready(telaInicial);
 
 function resultado() {
-	if (data.jogadores[0].pontos > 21){
+	if (data.jogadores[0].pontos > 21) {
 		return data.jogadores[0].nome + " estourou " + data.jogadores[0].pontos + " pontos e perdeu."; 
 	}
 	if(data.jogadores[0].pontos > data.jogadores[1].pontos && 
@@ -91,3 +91,20 @@ function resultado() {
 	else return "O croupier venceu " + data.jogadores[1].pontos;
 }
 
+
+function pegaNome() {
+	if ( $("#jogadorNome").val() == '') {
+		$('#obrigatorio').html("* Nome é Obrigatório.");
+		return $("#jogadorNome").focus();
+	} else {
+		carregarTelaJogo();
+	}
+}
+
+function verificaEnter() {
+	$("#jogadorNome").keyup(function(event) {
+    	if (event.keyCode === 13) {
+        	pegaNome();
+    	}
+	});
+}

@@ -1,7 +1,9 @@
-<div>
+<div style="text-align: center">
 	<em>Digite seu nome:</em>
-	<input id="jogadorNome"/>
+	<input id="jogadorNome" onkeypress="verificaEnter()"/>
+	<span id="obrigatorio"></span>
 </div>
+<br>
 <span class="input-group-btn"> 
-	<button id="botaoJogar" class="js-add btn btn-primary btn-block" type="button" onclick="carregarTelaJogo()">Jogar!</button> 
+	<button id="botaoJogar" class="js-add btn btn-primary btn-block" type="button" onclick="pegaNome()" style="width: 150px; margin: auto">Jogar!</button> 
 </span>
